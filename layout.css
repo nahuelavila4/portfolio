@@ -1,0 +1,92 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	background: #8CD982;
+	padding: 30px;
+	text-align: center;
+	width: 100%;
+	/*los atributos van como agujas de reloj,
+	empiezan arriba y van hacia la derecha*/
+}
+
+nav{
+	width: 100%;
+	background: #AF7D67;
+	/*text-align: center;*/
+	padding: 20px;
+}
+
+nav a{
+	text-decoration: none;
+	color: #E6BB95;
+	padding: 20px;
+	text-align: center;
+}
+
+.row{
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.sec-img{
+	background: #E0A876;
+	padding: 22px;
+	width: 30%;
+	border-bottom: 1px solid black;
+
+	/*flex con un solo valor determina
+	las dimensiones del elemento*/
+}
+.sec-text{
+	background: #E6BB95;
+	padding: 22px;
+	width: 70%;
+	border-bottom: 1px solid black;
+}
+footer{
+	background: #AF7D67;
+	padding: 20px;
+	text-align: center;
+}
+
+#contacto{
+	background-color: #E6BB95;
+	width: 100%;
+	padding: 12px;
+	flex-direction: column;
+}
+
+
+@media (max-width: 900px){
+	.row > *{
+		width: 100%;
+	}
+}
+
+
+/*fuentes e img*/
+
+h1{
+	font-size: 40px;
+	letter-spacing: 14px;
+}
+
+h2{
+	font-size: 24px;
+}
+
+p, a{
+	font-size: 18px;
+	width: 70%;
+}
+
+section img{
+	width: 270px;
+	justify-content: center;
+}

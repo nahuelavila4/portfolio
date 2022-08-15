@@ -1,0 +1,77 @@
+@font-face{
+	font-family: Quattrocento;
+	src: local(Quattrocento), url(F:\Programacion\HTMLCSS\fuentes\Quattrocento-Regular.otf);
+}
+body{
+	background: #F7F7F7;
+}
+#princ{
+	background-color: #D3F0F2;
+	margin: 2.5% 15%;
+	padding-top: 6px;
+	padding-bottom: 30px;
+}
+#sec{
+	background-color: #D3F0F2;
+	margin: 5% 15%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#tribute-info{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+}
+#acerca{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 50%;
+}
+/*align-item centra verticalmente
+hustify-content lo hace horizontalmente*/
+
+/*al usar flex saber q si el div con flex
+tiene dentro otro div estos se van a centrar
+uno al lado del otro*/
+#title{
+	display: flex;
+	justify-content: center;
+}
+#imgg{
+	display: flex;
+	justify-content: center;
+}
+#img-caption{
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+	/*flex-direction: column;*/
+}
+img{
+	max-width: 25%;
+}
+/*#title{
+	display: flex;
+	justify-content: center;
+}*/
+
+/*fuente*/
+h1, h3{
+	font-family: Quattrocento;
+}
+h1{
+	font-size: 40px;
+}
+h3{
+	font-size: 26px;
+}
+p, #img-caption{
+	font-size: 18px;
+}
+
+}
