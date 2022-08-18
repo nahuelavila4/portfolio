@@ -1,9 +1,7 @@
-@font-face{
-	font-family: Quattrocento;
-	src: local(Quattrocento), url(F:\Programacion\HTMLCSS\fuentes\Quattrocento-Regular.otf);
-}
 body{
 	background: #F7F7F7;
+	font-family: "Quattrocento", serif;
+
 }
 #princ{
 	background-color: #D3F0F2;
@@ -18,6 +16,9 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+#tribute-link{
+	padding-bottom: 35px;
 }
 #tribute-info{
 	display: flex;
@@ -72,6 +73,4 @@ h3{
 }
 p, #img-caption{
 	font-size: 18px;
-}
-
 }

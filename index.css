@@ -61,7 +61,7 @@
 #welcome-section{
 	width: 100%;
 	height: 1000px;
-	background: url("F:/Programacion/HTMLCSS2/img/fondocompu.jpg");
+	background: url("./img/fondocompu.jpg");
 	background-size: cover;
 	background-position: center center;
 	/*hay que ponerle display flex a cada
