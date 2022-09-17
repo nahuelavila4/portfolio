@@ -61,15 +61,26 @@ header #navbar{
 
 
 #welcome-section{
-  background-color: #729AFF;
-  padding: 14px;
-  text-align: justify;
+  height: 90vh;
+  text-align: center;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+  ), url('./img/espacio.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 
   display: flex;
   flex-flow: column wrap;
+  justify-content: center;
   align-items: center;
-}
 
+}
+#welcome-section h1, h2{
+  color: rgb(236, 89, 89);
+}
 
 #info{
   background-color: #765DE8;
@@ -79,9 +90,10 @@ header #navbar{
   align-items: center;
   flex-flow: column wrap;
 }
-
-
-
+#info .container{
+  text-align: center;
+  padding: 0px 20px;
+}
 
 #projects{
   background-color: #729AFF;
@@ -93,16 +105,60 @@ header #navbar{
 
 
 
+#conocimientos{
+  background-color: #765DE8;
+}
+
+.skill-barra{
+  position: relative;
+  width: 200px;
+  height: 20px;
+  background-color: aliceblue;
+  border-radius: 25px;
+  overflow: hidden;
+}
+#html:before{
+  width: 85%;
+}
+#css:before{
+  width: 80%;
+}
+#react:before{
+  width: 52%;
+}
+#js:before{
+  width: 72%;
+}
+#git:before{
+  width: 57%;
+}
+.skill-barra::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  background-color: #e4b266;
+  transform: translateX(-100%);
+  animation: fill-bar 1s 0.2s ease-in-out forwards;
+}
+@keyframes fill-bar{
+  to{
+    transform: translateX(0%);
+  }
+}
+
+
+
+
 
 #contact{
-  background-color: #765DE8;
+  background-color: #729AFF;
 }
 
 
 
 
 footer{
-  background-color: #654ecf;
+  background-color: #5c81df;
 }
 
 
