@@ -5,25 +5,25 @@
   font-family: "Gantari", sans-serif;
   /* color: white; */
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 h1 {
-  font-size: 30px;
+  font-size: 33px;
 }
 h2 {
-  font-size: 23px;
+  font-size: 27px;
   font-weight: 200;
 }
 h3 {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
 }
 h4 {
   font-size: 18px;
   font-weight: 600;
 }
-h1, h2, h3, h4{
+h1, h2, h3, h4 {
   color: rgb(238, 98, 98);
 }
 
@@ -33,7 +33,7 @@ h1, h2, h3, h4{
 }
 
 header {
-  background-color: #5dc4e8;
+  background-color: #765de8;
 }
 
 header .logo {
@@ -83,10 +83,12 @@ header #navbar {
   justify-content: center;
   align-items: center;
 }
-#welcome-section h1{
-  font-size: 3em;
+#welcome-section h1 {
+  font-size: 9vw;
 }
-
+#welcome-section h2 {
+  font-size: 7vw;
+}
 #info {
   background-color: #765de8;
   text-align: justify;
@@ -101,56 +103,75 @@ header #navbar {
   padding: 0px 20px;
 }
 
-
-
 #projects {
   height: 100vh;
   background-color: #729aff;
   text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#projects .indiv{
+#projects .indiv {
   background-size: cover;
   background-position: center center;
-  padding: 50px;
-  border-radius: 14px;
+  padding: 30px 15px;
+  margin: 18px 0px;
+  border-radius: 12px;
 }
-
-#con-hongo{
+#projects button {
+  padding: 10px 18px;
+  border-radius: 12px;
+}
+.indiv h3{
+  padding: 16px;
+}
+img {
+  width: 120px;
+  height: 120px;
+}
+#con-hongo {
   background-image: linear-gradient(
-    0deg,
-    rgba(91, 91, 91, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ),url("./img/hongo-vector.jpeg");
+      0deg,
+      rgba(91, 91, 91, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("./img/hongo-vector.jpeg");
 }
-#con-boxeo{
+#con-boxeo {
   background-image: linear-gradient(
-    0deg,
-    rgba(91, 91, 91, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ),url("./img/boxeo-vector.jpg");
+      0deg,
+      rgba(91, 91, 91, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("./img/boxeo-vector.jpg");
 }
-#con-des{
+#con-des {
   background-image: linear-gradient(
-    0deg,
-    rgba(91, 91, 91, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ),url("./img/calma2.jpg");
+      0deg,
+      rgba(91, 91, 91, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("./img/calma2.jpg");
 }
-#con-sm{
+#con-sm {
   background-image: linear-gradient(
-    0deg,
-    rgba(91, 91, 91, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ),url("./img/san_martin.jpg");
+      0deg,
+      rgba(91, 91, 91, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("./img/san_martin.jpg");
 }
-
-
 
 #conocimientos {
   height: 100vh;
   background-color: #765de8;
-}
+  text-align: left;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .skill-barra {
   position: relative;
   width: 200px;
@@ -182,6 +203,13 @@ header #navbar {
   transform: translateX(-100%);
   animation: fill-bar 1s 0.2s ease-in-out forwards;
 }
+.tec-front,
+.tec-tool {
+  margin: 40px 0px;
+}
+#conocimientos h3{
+  margin: 20px 0px;
+}
 @keyframes fill-bar {
   to {
     transform: translateX(0%);
@@ -193,25 +221,56 @@ header #navbar {
   background-color: #729aff;
 }
 
+#contact {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+
+  /* justify-content: center;
+
+  text-align: center; */
+}
+#contact input, textarea{
+  background:none;
+  border: 2px solid #5c81df;
+  padding: 10px 5px;
+  border-radius: 10px;
+  color: aliceblue;
+
+}
 footer {
   background-color: #5c81df;
 }
-
-[type="submit"] {
-  font-size: 20px;
-  font-weight: 400;
-  padding: 10px 18px;
-  border-radius: 12px;
-  border: 1px solid rgb(103, 103, 103);
-  background-color: rgb(49, 88, 180);
-  color: aliceblue;
+footer p {
+  margin: 0;
 }
-
+footer .container {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+[type="submit"]{
+  font-size: 20px;
+  width: 140px;
+} 
+/* 
 [type="submit"]:hover {
   background-color: rgb(43, 78, 159);
-}
+} */
 
-img {
-  width: 120px;
-  height: 120px;
+
+@media (min-width: 720px){
+  header .container {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  header #navbar {
+    flex-flow: row wrap;
+    padding-bottom: 0;
+    padding-right: 30px;
+  }
+  #navbar a{
+    padding: 0px 10px;
+  }
 }

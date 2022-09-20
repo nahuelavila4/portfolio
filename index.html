@@ -22,10 +22,10 @@
         <div class="container">
           <h4 class="logo">Nahuel Avila</h4>
           <nav id="navbar">
-            <a href="">Inicio</a>
-            <a href="">Sobre mi</a>
-            <a href="">Trabajos</a>
-            <a href="">Conocimientos</a>
+            <a href="#welcome-section">Inicio</a>
+            <a href="#info">Sobre mi</a>
+            <a href="#projects">Trabajos</a>
+            <a href="#conocimientos">Conocimientos</a>
             <a href="#contact">Contacto</a>
           </nav>
         </div>
@@ -72,31 +72,33 @@
         </div>
       </section>
       <section id="conocimientos">
-        <h3>Tecnologias</h3>
-        <div class="tec-front">
-          <h4>Front-End</h4>
-          <div class="skill">
-            <p>HTML</p>
-            <div class="skill-barra" id="html"></div>
+        <div class="container">
+          <h3>Tecnologias</h3>
+          <div class="tec-front">
+            <h4>Front-End</h4>
+            <div class="skill">
+              <p>HTML</p>
+              <div class="skill-barra" id="html"></div>
+            </div>
+            <div class="skill">
+              <p>CSS</p>
+              <div class="skill-barra" id="css"></div>
+            </div>
+            <div class="skill">
+              <p>JavaScript</p>
+              <div class="skill-barra" id="js"></div>
+            </div>
+            <div class="skill">
+              <p>React.JS</p>
+              <div class="skill-barra" id="react"></div>
+            </div>
           </div>
-          <div class="skill">
-            <p>CSS</p>
-            <div class="skill-barra" id="css"></div>
-          </div>
-          <div class="skill">
-            <p>JavaScript</p>
-            <div class="skill-barra" id="js"></div>
-          </div>
-          <div class="skill">
-            <p>React.JS</p>
-            <div class="skill-barra" id="react"></div>
-          </div>
-        </div>
-        <div class="tec-tool">
-          <h4>Herramientas de Desarrollo</h4>
-          <div class="skill">
-            <p>Git</p>
-            <div class="skill-barra" id="git"></div>
+          <div class="tec-tool">
+            <h4>Herramientas de Desarrollo</h4>
+            <div class="skill">
+              <p>Git</p>
+              <div class="skill-barra" id="git"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -108,6 +110,23 @@
             puede enviar un email
           </p>
         </div>
+        <form action="">
+          <h3>Deje un mensaje</h3>
+          <div class="inputs">
+            <input
+              type="text"
+              placeholder="Nombre completo"
+              required="required"
+            />
+            <input type="email" placeholder="Email" required="required" />
+            <textarea
+              placeholder="Redacte su mensaje"
+              required="required"
+            ></textarea>
+            <br />
+            <input id="boton_enviar" type="submit" value="Enviar" />
+          </div>
+        </form>
         <div class="contact_box">
           <a
             href="https://www.linkedin.com/in/nahuelavila-285803162/"
@@ -128,29 +147,11 @@
             <i class="fa-solid fa-phone"></i>
           </a>
         </div>
-
-        <form action="">
-          <h3>Deje un mensaje</h3>
-          <div class="inputs">
-            <input
-              type="text"
-              placeholder="Nombre completo"
-              required="required"
-            />
-            <br />
-            <input type="email" placeholder="email" required="required" />
-            <br />
-            <textarea
-              placeholder="Redacte su mensaje"
-              required="required"
-            ></textarea>
-            <br />
-            <input id="boton_enviar" type="submit" value="enviar" />
-          </div>
-        </form>
       </section>
       <footer>
-        <p>&copy; Nahuel Avila 2022</p>
+        <div class="container">
+          <p>&copy; Nahuel Avila 2022</p>
+        </div>
       </footer>
     </div>
   </body>
