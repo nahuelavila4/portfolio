@@ -102,9 +102,20 @@ header #navbar {
   flex-flow: column wrap;
 }
 #info .container {
+  justify-content: center;
   text-align: center;
-  padding: 0px 20px;
 }
+#cont-info{
+  margin-top: 34px;
+}
+#cont-info p{
+  margin: 12px 20px 0px 20px;
+}
+#cont-info img{
+  border-radius: 12px;
+}
+
+
 
 #projects {
   height: 100vh;
@@ -206,12 +217,14 @@ img {
   transform: translateX(-100%);
   animation: fill-bar 1s 0.2s ease-in-out forwards;
 }
-.tec-front,
-.tec-tool {
-  margin: 40px 0px;
+.tec-front{
+  margin: 40px 0px 0px 0px;
 }
-#conocimientos h3 {
-  margin: 20px 0px;
+.tec-tool{
+  margin: 25px 0px 0px 0px;
+}
+.skill{
+  margin-top: 12px;
 }
 @keyframes fill-bar {
   to {
@@ -223,7 +236,7 @@ img {
   height: 100vh;
   background-color: #729aff;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
 }
@@ -233,8 +246,9 @@ img {
   align-items: center;
   flex-direction: column;
 
-  text-align: justify;
-  padding: 15px;
+  text-align: center;
+  padding: 0px 30px;
+  padding-top: 14px;
 }
 form {
   display: flex;
@@ -252,6 +266,8 @@ form .inputs {
 #contact input[type="submit"] {
   font-size: 18px;
   margin-top: 20px;
+  background: #84a7ff;
+  color: aliceblue;
 }
 
 #contact input,
@@ -261,7 +277,7 @@ textarea {
   border: 2px solid #5c81df;
 
   margin: 8px 0px;
-  padding: 10px 5px;
+  padding: 6px 12px;
   border-radius: 10px;
   color: aliceblue;
   outline: 0;
@@ -273,12 +289,12 @@ textarea {
 .contact_box {
   display: flex;
   justify-content: center;
-  margin-top: 60px;
-  /* justify-content: space-around; */
+  justify-content: space-around;
 }
 .contact_box a {
-  font-size: 30px;
-  padding: 12px;
+  font-size: 27px;
+  padding: 10px;
+  margin: 0px 18px;
   border-radius: 12px;
   text-decoration: none;
   color: rgb(238, 98, 98);
