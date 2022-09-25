@@ -118,7 +118,7 @@ header #navbar {
 
 
 #projects {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #729aff;
   text-align: center;
 
@@ -144,29 +144,22 @@ img {
   width: 120px;
   height: 120px;
 }
+
 #con-hongo {
   background-image: linear-gradient(
-      0deg,
-      rgba(91, 91, 91, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("./img/hongo-vector.jpeg");
+    0deg,
+    rgba(91, 91, 91, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url("./img/hongo-vector.jpeg");
 }
-#con-boxeo {
+#con-divisa {
   background-image: linear-gradient(
-      0deg,
-      rgba(91, 91, 91, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("./img/boxeo-vector.jpg");
-}
-#con-des {
-  background-image: linear-gradient(
-      0deg,
-      rgba(91, 91, 91, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("./img/calma2.jpg");
+    0deg,
+    rgba(91, 91, 91, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url("./img/divisa.jpg");
 }
 #con-sm {
   background-image: linear-gradient(
@@ -176,6 +169,36 @@ img {
     ),
     url("./img/san_martin.jpg");
 }
+#con-romanos {
+  background-image: linear-gradient(
+      0deg,
+      rgba(91, 91, 91, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("./img/fondo_romanos.jpg");
+
+}
+#con-boxeo {
+  background-image: linear-gradient(
+      0deg,
+      rgba(91, 91, 91, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("./img/boxeo-vector.jpg");
+    display: none;
+
+}
+#con-des {
+  background-image: linear-gradient(
+      0deg,
+      rgba(91, 91, 91, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("./img/calma2.jpg");
+    display: none;
+
+}
+
 
 #conocimientos {
   height: 100vh;
@@ -250,6 +273,9 @@ img {
   padding: 0px 30px;
   padding-top: 14px;
 }
+#contact #text p{
+  padding-top: 20px;
+}
 form {
   display: flex;
   justify-content: center;
@@ -269,7 +295,9 @@ form .inputs {
   background: #84a7ff;
   color: aliceblue;
 }
-
+#contact input[placeholder="Nombre completo"] {
+  margin-top: 20px;
+}
 #contact input,
 textarea {
   width: 200px;
@@ -293,7 +321,7 @@ textarea {
 }
 .contact_box a {
   font-size: 27px;
-  padding: 10px;
+  padding: 12px;
   margin: 0px 18px;
   border-radius: 12px;
   text-decoration: none;

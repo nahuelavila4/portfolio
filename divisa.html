@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor divisas</title>
+    <link rel="stylesheet" href="divisa_styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="cont">
+      <div id="titulo">
+        <h1>Conversor de divisas</h1>
+      </div>
+      <div id="row">
+        <div id="imp">
+          <h3>Importe</h3>
+          <input
+            type="text"
+            id="cantidad"
+            placeholder="$0.00"
+            onchange="convertir()"
+          />
+        </div>
+        <div id="div_inicial">
+          <h3>De la divisa</h3>
+          <select id="moneda_inicial" onchange="convertir()">
+            <option value="1">Peso</option>
+            <option value="2">Dolar</option>
+            <option value="3">Euro</option>
+          </select>
+        </div>
+        <div id="div_final">
+          <h3>A la divisa</h3>
+          <select id="moneda_final" onchange="convertir()">
+            <option value="1">Peso</option>
+            <option value="2">Dolar</option>
+            <option value="3">Euro</option>
+          </select>
+        </div>
+        <div id="resultado">
+          <span id="qwe"></span>
+        </div>
+      </div>
+    </div>
+    <script src="divisa.js"></script>
+  </body>
+</html>

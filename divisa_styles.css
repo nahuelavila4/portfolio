@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-color:lightblue;
+    font-family: 'Merriweather', serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cont{
+    width: 35%;
+    height: 450px;
+    background-color:cadetblue;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+
+}
+#titulo{
+    background-color: azure;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+    padding: 15px;
+    text-align: center;
+}
+#imp{
+    display: flex;
+}
+#div_inicial{
+    display: flex;
+}
+#div_final{
+    display: flex;
+}
+#cont > *{
+    margin-top: 33px;
+}
+
+
+
+

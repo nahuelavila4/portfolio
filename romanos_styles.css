@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-image: url("./img/fondo_romanos.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cont{
+    width: 500px;
+    height: 400px;
+    background-color: rgba(95, 158, 160, 0.829);
+    margin: 50% 0;
+    
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ingresar{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.ingresar > *{
+    margin: 14px 0;
+}
