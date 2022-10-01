@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Nahuel Avila</title>
     <link rel="stylesheet" href="index.css" />
     <script
       src="https://kit.fontawesome.com/5b00e0e4a8.js"
@@ -23,7 +23,6 @@
           <h4 class="logo">Nahuel Avila</h4>
           <nav id="navbar">
             <a href="#welcome-section">Inicio</a>
-            <a href="#info">Sobre mi</a>
             <a href="#projects">Trabajos</a>
             <a href="#conocimientos">Conocimientos</a>
             <a href="#contact">Contacto</a>
@@ -31,19 +30,20 @@
         </div>
       </header>
       <section id="welcome-section">
-        <h1>Hola</h1>
-        <h2>Bienvenido a mi portfolio</h2>
-      </section>
-      <section id="info">
+        <div class="foto-info">
+          <h1>Hola, soy Nahuel</h1>
+          <h2>Front-end Developer</h2>
+          <img src="./img/Foto.jpg" alt="" />
+        </div>
         <div class="container">
           <h3>Informacion sobre mi</h3>
-          <div id="cont-info">
-            <img src="./img/Foto.jpg" alt="" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
-              vero sunt ipsam esse, obcaecati maxime eligendi deleniti
-              cupiditate aliquam modi pariatur quia enim eos quae quam veritatis
-              fugiat, quaerat molestiae.
+          <div class="cont-info">
+            <p style="color: rgb(238, 98, 98)">
+              Desarrollo web. Egresado en escuela tecnica, en la especialidad de computacion. Si bien
+              acabe mis estudios secundarios hace un par de años he retomado recientemente el habito de la 
+              programacion. Me encuentro a la busqueda de mi primer experiencia laboral en el sector IT.
+              Mi principal objetivo es abrirme camino hacia empresas internacionales de gran renombre.
+            
             </p>
           </div>
         </div>
@@ -62,7 +62,11 @@
             </div>
             <div class="indiv" id="con-sm">
               <h3>San Martin</h3>
-              <button>Visitar</button>
+              <a
+                href="https://developer.mozilla.org/es/docs/Web/CSS/grid-template-columns"
+              >
+                Visitar
+              </a>
             </div>
             <div class="indiv" id="con-romanos">
               <h3>Numeros romanos</h3>
@@ -76,10 +80,9 @@
               <h3>Desarrollo personal</h3>
               <button>Visitar</button>
             </div>
-            
           </div>
-          <div class="cargar">
-            <button>Ver mas</button>
+          <div class="btn-cargar">
+            <button class="cargar">Ver mas</button>
           </div>
         </div>
       </section>
@@ -103,6 +106,21 @@
             <div class="skill">
               <p>React.JS</p>
               <div class="skill-barra" id="react"></div>
+            </div>
+          </div>
+          <div class="tec-back">
+            <h4>Back-End</h4>
+            <div class="skill">
+              <p>Python</p>
+            </div>
+            <div class="skill">
+              <p>PHP</p>
+            </div>
+            <div class="skill">
+              <p>MongoDB</p>
+            </div>
+            <div class="skill">
+              <p>Node.js</p>
             </div>
           </div>
           <div class="tec-tool">
@@ -168,5 +186,19 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      let indiv = document.querySelectorAll(".indiv");
+      let cargar = document.querySelector(".cargar");
+
+      let img = 3;
+
+      cargar.addEventListener("click", function () {
+        let boxes = [...document.querySelectorAll(".trabajos .indiv")];
+        for (let x = img; x < img + 3; x++) {
+          boxes[x].style.display = "inline-block";
+        }
+      });
+    </script>
   </body>
 </html>
