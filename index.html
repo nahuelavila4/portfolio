@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    
   </head>
   <body>
     <div id="cont">
@@ -166,26 +167,40 @@
         </div>
       </section>
       <section id="contact">
+<<<<<<< HEAD
         <div id="text">
           <h2>Contacto</h2>
+=======
+        <!-- <div id="text">
+          <h3>Contacto</h3>
+>>>>>>> 1a79b81 (form funcional)
           <p>
             Debajo encontrara mis redes para poder comunicarse conmigo, tambien
             puede enviar un email.
           </p>
-        </div>
+        </div> -->
         <div id="for">
-          <form action="">
+          <form action="https://formspree.io/f/xyyvjejo" method="POST">
             <h3>Deje un mensaje</h3>
             <div class="inputs">
               <input
                 type="text"
                 placeholder="Nombre completo"
                 required="required"
+                name="name"
               />
-              <input type="email" placeholder="Email" required="required" />
-              <textarea
-                placeholder="Redacte su mensaje"
+              <input
+                type="email"
+                placeholder="Email"
                 required="required"
+                name="_replyto"
+              />
+              <textarea
+                placeholder="Ingrese su mensaje"
+                required="required"
+                name="message"
+                cols="30"
+                rows="10"
               ></textarea>
               <br />
               <input id="boton_enviar" type="submit" value="Enviar" />
@@ -230,6 +245,10 @@
         let boxes = [...document.querySelectorAll(".trabajos .indiv")];
         for (let x = img; x < img + 3; x++) {
           boxes[x].style.display = "inline-block";
+        }
+        img += 3;
+        if (img >= boxes.length) {
+          cargar.style.display = "none";
         }
       });
     </script>

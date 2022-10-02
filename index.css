@@ -33,7 +33,7 @@ h4 {
 }
 .container {
   max-width: 1400px;
-  margin: auto;
+  margin: 0px auto;
 }
 /* #welcome-section .container{
   margin: 0;
@@ -202,7 +202,6 @@ button{
     url("./img/calma2.jpg");
 }
 
-
 #conocimientos {
   height: 100vh;
   background-color: #765de8;
@@ -224,14 +223,19 @@ button{
 #conocimientos .container .skill p{
   display: inline;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1a79b81 (form funcional)
 #contact {
   height: 100vh;
   background-color: #729aff;
   display: flex;
-  justify-content: space-around;
+  justify-content:center;
   align-items: center;
   flex-direction: column;
 }
+
 #contact #text {
   display: flex;
   justify-content: center;
@@ -245,7 +249,10 @@ button{
 #contact #text p{
   padding-top: 20px;
 }
+
 form {
+  background: #7ea2fd;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -258,13 +265,8 @@ form .inputs {
   flex-direction: column;
 }
 
-#contact input[type="submit"] {
-  font-size: 18px;
-  margin-top: 20px;
-  color: aliceblue;
-}
 #contact input[placeholder="Nombre completo"] {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 #contact input,
 textarea {
@@ -278,12 +280,18 @@ textarea {
   color: aliceblue;
   outline: 0;
 }
+
+#contact input[type="submit"] {
+  font-size: 18px;
+  margin: 20px 0px 0px 0px;
+  color: aliceblue;
+}
+
 #contact textarea {
   height: 100px;
 }
 .contact_box {
   display: flex;
-  justify-content: center;
   justify-content: space-around;
 }
 .contact_box a{
