@@ -15,7 +15,6 @@
       href="https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    
   </head>
   <body>
     <div id="cont">
@@ -56,51 +55,27 @@
           <div class="trabajos">
             <div class="indiv" id="con-hongo">
               <h3>Info-Hongos</h3>
-              <a
-                href="primer_layout.html" target="_blank"
-              >
-                Visitar
-              </a>
+              <a href="primer_layout.html" target="_blank"> Visitar </a>
             </div>
             <div class="indiv" id="con-divisa">
               <h3>Conversor de divisa</h3>
-              <a
-                href="divisa.html" target="_blank"
-              >
-                Visitar
-              </a>
+              <a href="divisa.html" target="_blank"> Visitar </a>
             </div>
             <div class="indiv" id="con-sm">
               <h3>San Martin</h3>
-              <a
-                href="tribute.html" target="_blank"
-              >
-                Visitar
-              </a>
+              <a href="tribute.html" target="_blank"> Visitar </a>
             </div>
             <div class="indiv" id="con-romanos">
               <h3>Numeros romanos</h3>
-              <a
-                href="romanos.html" target="_blank"
-              >
-                Visitar
-              </a>
+              <a href="romanos.html" target="_blank"> Visitar </a>
             </div>
             <div class="indiv" id="con-boxeo">
               <h3>Boxeo</h3>
-              <a
-                href="prep_flexbox1.html" target="_blank"
-              >
-                Visitar
-              </a>
+              <a href="prep_flexbox1.html" target="_blank"> Visitar </a>
             </div>
             <div class="indiv" id="con-des">
               <h3>Desarrollo personal</h3>
-              <a
-                href="producto.html" target="_blank"
-              >
-                Visitar
-              </a>
+              <a href="producto.html" target="_blank"> Visitar </a>
             </div>
           </div>
           <div class="btn-cargar">
@@ -166,11 +141,25 @@
           </div>
         </div>
       </section>
+      <!-- 
+      Tip medida em y rem
+      em hace referencia al tamaño de fuente del padre
+      de nuestro elemento. Si lo usamos para dar valor a margin, padding, etc.
+      hace ref al tamaño fuente del elemento.
+      usar siempre que la medida tenga que crecer
+      prop al tamaño del texto
+
+      rem hacer referencia al tamaño de fuente de raiz
+      del documento (html). 1rem = 16px
+      usar siempre rem para tamaño de fuente y cuando
+      deba ser la misma y relativa al tamaño de fuente
+      de raiz
+    -->
       <section id="contact">
-        <div id="for">
-          <form action="https://formspree.io/f/xyyvjejo" method="POST">
-            <h3>Deje un mensaje</h3>
-            <div class="inputs">
+        <div class="nested-grid">
+          <div id="for">
+            <h2>Deje un mensaje</h2>
+            <form action="https://formspree.io/f/xyyvjejo" method="POST">
               <input
                 type="text"
                 placeholder="Nombre completo"
@@ -187,13 +176,19 @@
                 placeholder="Ingrese su mensaje"
                 required="required"
                 name="message"
-                cols="30"
-                rows="10"
               ></textarea>
-              <br />
-              <input id="boton_enviar" type="submit" value="Enviar" />
-            </div>
-          </form>
+              <input id="boton_enviar" type="submit" value="Enviar"/>
+            </form>
+          </div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105076.3102337645!2d-58.453954767639196!3d-34.61339785226076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1664837973009!5m2!1ses-419!2sar"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
         <div class="contact_box">
           <a
@@ -216,6 +211,7 @@
           </a>
         </div>
       </section>
+      
       <footer>
         <div class="container">
           <p>&copy; Nahuel Avila 2022</p>

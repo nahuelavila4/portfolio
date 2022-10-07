@@ -8,6 +8,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 h1 {
   font-size: 33px;
 }
@@ -47,6 +48,7 @@ img {
 
 header {
   background-color: #765de8;
+  /* position: fixed; */
 }
 
 header .logo {
@@ -132,11 +134,17 @@ button{
   background-position: center center;
   border-radius: 12px;
 }
-#projects button {
-  font-size: 16px;
-  margin-top: 20px;
-  padding: 10px 20px;
+#projects .container .btn-cargar .cargar {
+  font-size: 1.3rem;
+  padding: .5em 1em;
+  margin-top: 1.5em;
   background: #765de8;
+  color: aliceblue;
+  cursor: pointer;
+}
+#projects .container .btn-cargar .cargar:hover{
+  background: #432F9C;
+  transition: 0.3s all linear;
 }
 #projects .container h2{
   margin-bottom: 40px;
@@ -226,63 +234,79 @@ button{
 
 
 #contact {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #729aff;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  flex-direction: column;
+  display: grid;
+/*   display: flex;
+  justify-content: center; */
 }
-form {
-  background: #7ea2fd;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+#contact .nested-grid{
+  max-width: 960px;
+  margin: auto;
+  width: 100%;
+  /* background: rgb(83, 171, 142); */
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1.5em;
+  padding: 20px;
 }
-form .inputs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+#contact #for h2{
+  margin-bottom: 1em;
+  text-align: center;
 }
-
-#contact input[placeholder="Nombre completo"] {
-  margin-top: 30px;
+#contact #for form{
+  display: grid;
+  row-gap: 1rem;
 }
-#contact input,
+#contact #for form input,
 textarea {
-  width: 200px;
-  background: none;
-  border: 2px solid #5c81df;
+  width: 100%;
+  background: #2D4991;
+  border: none;
+  outline: none;
 
-  margin: 8px 0px;
   padding: 6px 12px;
   border-radius: 10px;
-  color: aliceblue;
-  outline: 0;
-}
-
-#contact input[type="submit"] {
-  font-size: 18px;
-  margin: 20px 0px 0px 0px;
+  font-size: 0.9rem;
   color: aliceblue;
 }
-
-#contact textarea {
-  height: 100px;
+#contact #for form textarea {
+  resize: none;
+  height: 200px;
 }
-.contact_box {
+#contact #for #boton_enviar {
+  font-size: 1rem;
+  font-weight: 500;
+  background: #7EC5FF;
+  border: none;
+  outline: none;
+  color: aliceblue;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#contact #for #boton_enviar:hover{
+  background: #6facde;
+  transition: 0.3s all linear;
+}
+#contact .map iframe{
+  width: 100%;
+  height: 400px;
+}
+
+#contact .contact_box{
+  /* background: #e4b266; */
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 20px;
+  margin-bottom: 1.2em;
 }
+
 .contact_box a{
-  margin: 0px 18px;
+  margin: 0 .6em;
   font-size: 27px;
   background: #5c81df;
   padding: 12px;
-
 }
 a {
   border-radius: 12px;
@@ -296,6 +320,7 @@ a {
 .contact_box a:active {
   color: #e4b266;
 }
+
 
 footer {
   background-color: #5c81df;
@@ -328,10 +353,16 @@ footer .container {
   #navbar a {
     padding: 0px 10px;
   }
+  #contact .nested-grid{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 15px;
+    }
+
 }
 
 @media (max-width: 420px) {
   .trabajos{
     grid-template-columns: 1fr;
   }
+
 }
