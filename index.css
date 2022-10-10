@@ -10,20 +10,20 @@ html {
 }
 
 h1 {
-  font-size: 33px;
+  font-size: 2.2rem;
 }
 h2 {
-  font-size: 28px;
+  font-size: 1.9em;
 }
 #welcome-section h2{
   font-weight: 200;
 }
 h3 {
-  font-size: 24px;
+  font-size: 1.6em;
   font-weight: 600;
 }
 h4 {
-  font-size: 18px;
+  font-size: 1.3em;
   font-weight: 600;
 }
 h1,
@@ -32,6 +32,9 @@ h3,
 h4 {
   color: rgb(238, 98, 98);
 }
+p{
+  font-size: 1rem;
+}
 .container {
   max-width: 1400px;
   margin: 0px auto;
@@ -39,12 +42,6 @@ h4 {
 /* #welcome-section .container{
   margin: 0;
 } */
-img {
-  width: 120px;
-  height: 120px;
-  border-radius: 12px;
-}
-
 
 header {
   background-color: #765de8;
@@ -112,7 +109,7 @@ button{
 
 
 #projects {
-  min-height: 100vh;
+  min-height: 120vh;
   background-color: #729aff;
   text-align: center;
   
@@ -121,18 +118,41 @@ button{
   align-items: center;
   flex-flow: column wrap;
 }
-
 .trabajos{
+  margin: 0 1em;
   display: grid;
-  grid-template-columns: repeat(3, 150px);
-  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
-  gap: 15px;
-
+  grid-template-columns: 1fr;
+  gap: 1.2em;
 }
-#projects .indiv {
-  background-size: cover;
-  background-position: center center;
+#projects .container .trabajos .indiv {
+  background: #ecedf0;
   border-radius: 12px;
+}
+#projects .container .trabajos .indiv .img{
+  height: 250px;
+  overflow: hidden;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+#projects .container .trabajos .indiv .img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#projects .container .trabajos .indiv:hover .img img{
+  transform: scale(1.1);
+  transition: 0.3s all linear;
+}
+#projects .container .trabajos .indiv h3{
+  margin-top: .6em;
+}
+#projects .container .trabajos .indiv .icon{
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 1.2em;
+
 }
 #projects .container .btn-cargar .cargar {
   font-size: 1.3rem;
@@ -147,7 +167,7 @@ button{
   transition: 0.3s all linear;
 }
 #projects .container h2{
-  margin-bottom: 40px;
+  margin-bottom: 2em;
 }
 .indiv{
   display: none;
@@ -161,77 +181,36 @@ button{
 .indiv:nth-child(3){
   display: block;
 }
-#con-hongo {
-  background-image: linear-gradient(
-    0deg,
-    rgba(91, 91, 91, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ),
-  url("./img/hongo-vector.jpeg");
-}
-#con-divisa {
-  background-image: linear-gradient(
-    0deg,
-    rgba(91, 91, 91, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ),
-  url("./img/divisa.jpg");
-}
-#con-sm {
-  background-image: linear-gradient(
-      0deg,
-      rgba(91, 91, 91, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("./img/san_martin.jpg");
-}
-#con-romanos {
-  background-image: linear-gradient(
-      0deg,
-      rgba(91, 91, 91, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("./img/fondo_romanos.jpg");
-}
-#con-boxeo {
-  background-image: linear-gradient(
-      0deg,
-      rgba(91, 91, 91, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("./img/boxeo-vector.jpg");
-}
-#con-des {
-  background-image: linear-gradient(
-      0deg,
-      rgba(91, 91, 91, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("./img/calma2.jpg");
-}
+
+
 
 #conocimientos {
-  height: 100vh;
+  height: 120vh;
   background-color: #765de8;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#conocimientos h2{
+#conocimientos .container h2{
   text-align: center;
+  margin-bottom: 1em;
 }
-#conocimientos .container{
+#conocimientos .container .stack{
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 15px;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
 }
-#conocimientos .container div{
+#conocimientos .container .stack div{
   background: #8c73f8;
+  padding: .7em 1em;
+  border-radius: 12px;
 }
 #conocimientos .container .skill p{
   display: inline;
 }
-
+#conocimientos .container .skill i{
+  color: #7EC5FF;
+}
 
 #contact {
   min-height: 100vh;
@@ -303,10 +282,10 @@ textarea {
 }
 
 .contact_box a{
-  margin: 0 .6em;
-  font-size: 27px;
+  margin: 0 .5em;
+  font-size: 1.6rem;
   background: #5c81df;
-  padding: 12px;
+  padding: .5em;
 }
 a {
   border-radius: 12px;
@@ -316,6 +295,7 @@ a {
 .contact_box a:hover {
   color: #729aff;
   background: #4d6cbb;
+  transition: 0.3s all linear;
 }
 .contact_box a:active {
   color: #e4b266;
@@ -339,7 +319,11 @@ footer .container {
 [type="submit"]:hover {
   background-color: rgb(43, 78, 159);
 } */
-
+@media (min-width: 470px){
+  .trabajos{
+    grid-template-columns: 1fr 1fr;
+  }
+}
 @media (min-width: 720px) {
   header .container {
     flex-flow: row wrap;
@@ -355,14 +339,14 @@ footer .container {
   }
   #contact .nested-grid{
     grid-template-columns: 1fr 1fr;
-    column-gap: 15px;
-    }
-
-}
-
-@media (max-width: 420px) {
-  .trabajos{
-    grid-template-columns: 1fr;
+    column-gap: 1.5em;
   }
-
+  .trabajos{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #conocimientos .container .stack{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+    margin: 0 1em;
+  }
 }
