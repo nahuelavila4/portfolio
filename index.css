@@ -80,7 +80,7 @@ header #navbar {
   color: #e4b266;
 }
 #welcome-section {
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
   background-image: linear-gradient(
       0deg,
@@ -97,11 +97,47 @@ header #navbar {
   align-items: center;
   flex-flow: column wrap;
 }
-#welcome-section img{
-  width: 150px;
-  height: 150px;
+#welcome-section .foto-info{
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 4.4em;
 }
 
+#welcome-section .card img{
+  width: 150px;
+  height: 150px;
+  margin: 1.2em 0;
+  object-fit: cover;
+  border-radius: .6em;
+}
+#welcome-section .card{
+  width: 320px;
+  background-color: #ecedf0;
+  border-radius: .6em;
+}
+#welcome-section .card .container{
+  margin: 1em;
+}
+#welcome-section .card .container h3{
+  margin: .5em;
+}
+.contact_box a{
+  margin: 0 .5em;
+  font-size: 1.6rem;
+  padding: .5em;
+}
+a {
+  border-radius: 12px;
+  text-decoration: none;
+  color: #765de8;
+}
+.contact_box a:hover {
+  color: #644dca;
+  transition: 0.3s all linear;
+}
+.contact_box a:active {
+  color: #e4b266;
+}
 button{
   border: none;
   border-radius: 12px;
@@ -272,35 +308,6 @@ textarea {
   height: 400px;
 }
 
-#contact .contact_box{
-  /* background: #e4b266; */
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 20px;
-  margin-bottom: 1.2em;
-}
-
-.contact_box a{
-  margin: 0 .5em;
-  font-size: 1.6rem;
-  background: #5c81df;
-  padding: .5em;
-}
-a {
-  border-radius: 12px;
-  text-decoration: none;
-  color: rgb(238, 98, 98);
-}
-.contact_box a:hover {
-  color: #729aff;
-  background: #4d6cbb;
-  transition: 0.3s all linear;
-}
-.contact_box a:active {
-  color: #e4b266;
-}
-
 
 footer {
   background-color: #5c81df;
@@ -333,6 +340,12 @@ footer .container {
     flex-flow: row wrap;
     padding-bottom: 0;
     padding-right: 30px;
+  }
+  #welcome-section .foto-info .presentacion{
+    margin-top: 2em;
+  }
+  #welcome-section .foto-info .contact_box{
+    margin-bottom: 2em;
   }
   #navbar a {
     padding: 0px 10px;
