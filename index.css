@@ -280,9 +280,9 @@ textarea {
   border: none;
   outline: none;
 
-  padding: 6px 12px;
+  padding: .7em 1.2em;
   border-radius: 10px;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: aliceblue;
 }
 #contact #for form textarea {
@@ -305,7 +305,7 @@ textarea {
 }
 #contact .map iframe{
   width: 100%;
-  height: 400px;
+  height: 28rem;
 }
 
 
